@@ -2,11 +2,11 @@ import type { Config } from './types';
 
 export default {
   id: '/',
-  name: 'My Blog',
-  shortName: 'My Blog',
-  description: 'My blog description goes here...',
+  name: 'Kabar NTB',
+  shortName: 'KabarNTB',
+  description: 'kabarntb.net menyajikan berita terkini, terpercaya, dan terlengkap seputar NTB, nasional, dan dunia. Aktual, faktual, dan berimbang setiap hari.',
   direction: 'auto',
-  language: 'en-US',
+  language: 'id-ID',
   backgroundColor: '#fff',
   themeColor: '#fff',
   display: 'standalone',
@@ -17,27 +17,27 @@ export default {
   preferRelatedApplications: false,
   shortcuts: [
     {
-      name: 'Shortcut 1',
-      shortName: 'Shortcut 1',
-      description: 'Shortcut 1 description goes here...',
-      url: '/search/label/shortcut-1?utm_source=homescreen',
+      name: 'Pemerintahan',
+      shortName: 'Pemerintahan',
+      description: 'Berita seputar Pemerintahan',
+      url: '/search/label/Pemerintahan?utm_source=homescreen',
     },
     {
-      name: 'Shortcut 2',
-      shortName: 'Shortcut 2',
-      description: 'Shortcut 2 description goes here...',
-      url: '/search/label/shortcut-2?utm_source=homescreen',
+      name: 'Hukum & Kriminal',
+      shortName: 'Hukum & Kriminal',
+      description: 'Berita seputar Hukum & Kriminal',
+      url: '/search/label/Hukum & Kriminal?utm_source=homescreen',
     },
   ],
   pwa: {
     logs: true,
     // OneSignal is not available if you are not using cloudflare workers
-    oneSignalEnabled: false,
+    oneSignalEnabled: true,
     oneSignalConfig: {
       appId: '********-****-****-****-************',
       allowLocalhostAsSecureOrigin: true,
     },
   },
   // Please replace with your blog url if you are using CDN (JsDelivr)
-  origin: 'https://hello-example.blogspot.com',
+  origin: 'https://www.kabarntb.net/',
 } satisfies Config;
